@@ -1,0 +1,189 @@
+@font-face {
+font-family: OpenSans_Bold;
+src: url('../font/Open_Sans_Condensed/OpenSans-CondBold.ttf');
+}
+@font-face {
+font-family: OpenSans_light;
+src: url('../font/Open_Sans_Condensed/OpenSans-CondLight.ttf');
+}
+@font-face {
+font-family: OpenSans_lightItalic;
+src: url('../font/Open_Sans_Condensed/OpenSans-CondLightItalic.ttf');
+}
+
+.header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: 3px solid #ce5510;
+    height: 100px;
+    text-align: center;
+}
+
+.header img{
+    height: 80px;
+    margin-top: 10px;
+}
+
+.menuFooter{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #843008;
+    height: 50px;
+}
+
+.corpo{
+    position: fixed;
+    top: 100px;
+    left:0;
+    right: 0;
+    bottom: 50px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.corpoGeral{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 3px;
+    bottom: 3px;
+    overflow-y:scroll;
+    font-family: OpenSans_light;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tabs{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute !important;
+    top: 0;
+    height: 80px !important
+}
+
+.tabs .tab{
+    background: #843008;
+    font-size: 15px;
+    padding: 0 2px;
+    line-height: 50px !important;
+    height: 50px !important;
+    letter-spacing: 0px !important;
+    font-family: OpenSans_light;
+}
+
+.corpo h1{
+    color: #cf5715;
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: 100;
+}
+
+.tituloHorario{
+    background: #cf5715;
+    font-size: 14px;
+    color: #fff;
+    padding: 3px 6px;
+    float: left;
+    font-weight: 100
+}
+
+.blocoEventos{
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.corpoGeral p{
+    color: #cf5715;
+    font-size: 22px;
+    font-weight: 100;
+    float: left;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.corpoGeral span{
+    float: left;
+    text-align: right;
+    width: 100%;
+    color: #843209;
+    font-size: 17px;
+    font-weight: bold
+}
+
+#programacao .tabs{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute !important;
+    top: 0;
+    height: 30px !important
+}
+
+#programacao table{
+    color: #cf5715;
+    font-size: 16px;
+}
+
+.sizeMaior{
+    font-size: 18px;
+}
+
+#programacao table div{
+    color: #000;
+    font-size: 14px;
+}
+
+#programacao table strong{
+    color: #000;
+    font-size: 14px;
+    font-family: OpenSans_Bold
+}
+
+#programacao .tabs .tab{
+    background: #ce5510 !important;
+    color: #fff;
+
+    font-size: 12px;
+    padding: 0 2px;
+    line-height: 30px !important;
+    height: 30px !important;
+    letter-spacing: 0px !important;
+    font-family: OpenSans_light;
+}
+
+.alignRight{
+    text-align: right !important;
+}
+
+.alignCenter{
+    text-align: center !important;
+}
+
+.topPos{
+    vertical-align: top !important
+}
+
+#programacao table td:nth-child(2){
+    background: url(../img/bar.png) center center repeat-y;
+}
+
+.descerUmPouco{
+    top: 30px
+}
+
+#programacao .tabs .active{
+    background: #843008 !important
+}
+
+.tabs .tab a{
+    color: #fff !important
+}
+
+.tabs .active{
+    background: #ce5510 !important
+}
