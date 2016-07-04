@@ -11,6 +11,8 @@ font-family: OpenSans_lightItalic;
 src: url('../font/Open_Sans_Condensed/OpenSans-CondLightItalic.ttf');
 }
 
+
+
 .header{
     position: fixed;
     left: 0;
@@ -22,6 +24,21 @@ src: url('../font/Open_Sans_Condensed/OpenSans-CondLightItalic.ttf');
 }
 
 .header img{
+    height: 80px;
+    margin-top: 10px;
+}
+
+.headerInicial{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: -50px;
+    height: 100px;
+    text-align: center;
+}
+
+.headerInicial img{
     height: 80px;
     margin-top: 10px;
 }
@@ -40,20 +57,57 @@ src: url('../font/Open_Sans_Condensed/OpenSans-CondLightItalic.ttf');
     top: 100px;
     left:0;
     right: 0;
-    bottom: 50px;
+    bottom: 5px;
     padding: 20px;
     overflow: hidden;
+}
+
+#expocom span{
+    text-align: left;
+    color: #cf5715;
+    float: left !important;
+    width: auto !important
+}
+
+#expocom .linhaExpocom{
+    width: 100%;
+    float: left;
+}
+
+#expocom span.titulo{
+    float: left;
+    margin-right: 5px;
+    color: #843209
+}
+
+.input-search {
+    background:#fff !important;
+    margin-top: -20px !important;
+    position: absolute;
 }
 
 .corpoGeral{
     position: absolute;
     left: 20px;
+    overflow-x:hidden;
     right: 20px;
     top: 3px;
     bottom: 3px;
     overflow-y:scroll;
     font-family: OpenSans_light;
     -webkit-overflow-scrolling: touch;
+}
+
+
+#open_menu{
+   position: absolute;
+   left:5px;
+   top:10px;
+   z-index: 2000
+}
+
+.side-nav{
+    z-index: 2001 !important
 }
 
 .tabs{
@@ -83,6 +137,20 @@ src: url('../font/Open_Sans_Condensed/OpenSans-CondLightItalic.ttf');
 }
 
 .tituloHorario{
+    width: 100%;
+    float: left
+}
+
+.tituloHorario .dentro{
+    background: #cf5715;
+    font-size: 14px;
+    color: #fff;
+    padding: 3px 6px;
+    float: left;
+    font-weight: 100
+}
+
+#expocom .tituloHorario{
     background: #cf5715;
     font-size: 14px;
     color: #fff;
@@ -99,11 +167,37 @@ src: url('../font/Open_Sans_Condensed/OpenSans-CondLightItalic.ttf');
 
 .corpoGeral p{
     color: #cf5715;
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 100;
     float: left;
     width: 100%;
     margin: 5px 0;
+}
+
+.side-nav{
+    background: #000 !important
+}
+
+.side-nav a{
+    color: #fff !important
+}
+
+#dts span{
+    float: left !important;
+    text-align: left !important;
+    margin-bottom: 20px
+}
+
+#dts .tabs .tab{
+    background: #ce5510 !important;
+    color: #fff;
+
+    font-size: 12px;
+    padding: 0 2px;
+    line-height: 30px !important;
+    height: 30px !important;
+    letter-spacing: 0px !important;
+    font-family: OpenSans_light;
 }
 
 .corpoGeral span{
@@ -111,11 +205,16 @@ src: url('../font/Open_Sans_Condensed/OpenSans-CondLightItalic.ttf');
     text-align: right;
     width: 100%;
     color: #843209;
-    font-size: 17px;
-    font-weight: bold
+    font-size: 15px;
+    font-weight: bold;
+    float: left;
 }
 
-#programacao .tabs{
+#programacao, #oficinas, #minicursos, #ij, #expocom, #dts{
+    display: none;
+}
+
+#programacao .tabs, #dts .tabs{
     left: 0;
     right: 0;
     bottom: 0;
@@ -124,9 +223,17 @@ src: url('../font/Open_Sans_Condensed/OpenSans-CondLightItalic.ttf');
     height: 30px !important
 }
 
+#dts h2, #ij h2{
+    font-size: 28px;
+}
+
 #programacao table{
     color: #cf5715;
     font-size: 16px;
+}
+
+#corpo{
+    overflow-x:hidden;
 }
 
 .sizeMaior{
@@ -156,6 +263,7 @@ src: url('../font/Open_Sans_Condensed/OpenSans-CondLightItalic.ttf');
     font-family: OpenSans_light;
 }
 
+
 .alignRight{
     text-align: right !important;
 }
@@ -176,7 +284,7 @@ src: url('../font/Open_Sans_Condensed/OpenSans-CondLightItalic.ttf');
     top: 30px
 }
 
-#programacao .tabs .active{
+#programacao .tabs .active, #dts .tabs .active{
     background: #843008 !important
 }
 
